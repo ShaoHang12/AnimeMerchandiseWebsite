@@ -1,0 +1,21 @@
+﻿
+# Dependencies
+node_modules/
+
+# Build outputs
+target/
+dist/
+*.jar
+*.jar.original
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

@@ -1,0 +1,165 @@
+﻿/* ====== Global Pink Theme ====== */
+
+/* --- Element UI 按钮覆盖 --- */
+.el-button--primary {
+  background: linear-gradient(135deg, #FF69B4, #FF1493) !important;
+  border-color: #FF69B4 !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  &:hover, &:focus {
+    background: linear-gradient(135deg, #FF89C0, #FF69B4) !important;
+    border-color: #FF89C0 !important;
+    box-shadow: 0 4px 15px rgba(255,105,180,0.4) !important;
+    transform: translateY(-2px);
+  }
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.el-button--success {
+  background: #FFB6C1 !important;
+  border-color: #FFB6C1 !important;
+  color: #fff !important;
+}
+
+.el-button--danger {
+  background: #FF1493 !important;
+  border-color: #FF1493 !important;
+}
+
+.el-button--warning {
+  background: #FFD700 !important;
+  border-color: #FFD700 !important;
+}
+
+.el-button--info {
+  background: #C71585 !important;
+  border-color: #C71585 !important;
+}
+
+/* --- Element UI 表格覆盖 --- */
+.el-table th {
+  background-color: #fff0f5 !important;
+  color: #C71585 !important;
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: #fff5f7 !important;
+}
+
+.el-table .el-table__header-wrapper th {
+  background: linear-gradient(135deg, #fff0f5, #ffe4e8) !important;
+}
+
+/* --- Element UI 分页器覆盖 --- */
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background: #FF69B4 !important;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled):hover {
+  color: #FF69B4 !important;
+}
+
+/* --- Element UI 对话框覆盖 --- */
+.el-dialog__header {
+  background: linear-gradient(135deg, #fff0f5, #ffe4e8);
+  border-bottom: 2px solid #FFB6C1;
+}
+
+.el-dialog__title {
+  color: #C71585 !important;
+}
+
+/* --- Element UI 标签页覆盖 --- */
+.el-tabs__item.is-active {
+  color: #FF69B4 !important;
+}
+
+.el-tabs__active-bar {
+  background-color: #FF69B4 !important;
+}
+
+/* --- Element UI 表单覆盖 --- */
+.el-input__inner:focus {
+  border-color: #FF69B4 !important;
+  box-shadow: 0 0 0 2px rgba(255,105,180,0.2) !important;
+}
+
+.el-textarea__inner:focus {
+  border-color: #FF69B4 !important;
+}
+
+/* --- Element UI 选择器覆盖 --- */
+.el-select .el-input.is-focus .el-input__inner {
+  border-color: #FF69B4 !important;
+}
+
+/* --- 全局滚动条美化 --- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #FF69B4, #FFB6C1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff0f5;
+}
+
+/* --- 原有样式 --- */
+.form-content {
+  background: #ffffff;
+  padding: 10px 10px 0 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(255,105,180,0.08);
+}
+.table-content {
+  background: #ffffff;
+  padding: 0 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(255,105,180,0.08);
+}
+.pagination-content {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  text-align: right;
+}
+.detail-form-content{
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  .el-input{
+    min-width: 200px;
+    max-width: 600px;
+  }
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.login-form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  background: #ffffff;
+  padding: 0 60px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.h1 {
+  margin-top: 80px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #C71585;
+}
+.btn-login {
+  margin-top: 50px;
+  width: 100%;
+}

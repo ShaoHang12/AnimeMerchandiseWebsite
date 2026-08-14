@@ -1,0 +1,177 @@
+﻿/* ========================================
+   粉色主题 - 高端大气上档次
+   ======================================== */
+
+/* 主色调定义 */
+:root {
+  --pink-primary: #FF6B9D;
+  --pink-light: #FFB8D0;
+  --pink-lighter: #FFD6E5;
+  --pink-lightest: #FFF0F5;
+  --pink-dark: #E85588;
+  --pink-darker: #D14073;
+  --pink-gradient: linear-gradient(135deg, #FF6B9D 0%, #FF8FB1 50%, #FFB8D0 100%);
+  --pink-gradient-soft: linear-gradient(135deg, #FFD6E5 0%, #FFF0F5 100%);
+  --pink-gradient-gold: linear-gradient(135deg, #FF6B9D 0%, #FFD700 100%);
+  --gold-accent: #FFD700;
+  --gold-light: #FFE44D;
+  --text-primary: #2D2D2D;
+  --text-secondary: #666666;
+  --text-light: #999999;
+  --bg-white: #FFFFFF;
+  --bg-cream: #FFF8FA;
+  --bg-light: #FFF0F5;
+  --shadow-pink: rgba(255, 107, 157, 0.15);
+  --shadow-soft: rgba(0, 0, 0, 0.08);
+}
+
+/* Element UI 粉色主题覆盖 */
+.el-button--primary {
+  background: var(--pink-gradient) !important;
+  border-color: var(--pink-primary) !important;
+  box-shadow: 0 4px 15px var(--shadow-pink) !important;
+  transition: all 0.3s ease !important;
+}
+
+.el-button--primary:hover {
+  background: linear-gradient(135deg, #E85588 0%, #FF6B9D 100%) !important;
+  box-shadow: 0 6px 20px rgba(255, 107, 157, 0.3) !important;
+  transform: translateY(-1px);
+}
+
+.el-button--primary:active {
+  transform: translateY(0);
+}
+
+/* Element UI 输入框粉色主题 */
+.el-input__inner:focus {
+  border-color: var(--pink-primary) !important;
+  box-shadow: 0 0 0 2px rgba(255, 107, 157, 0.1) !important;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+  background: var(--pink-primary) !important;
+  border-color: var(--pink-primary) !important;
+}
+
+.el-radio__input.is-checked+.el-radio__label {
+  color: var(--pink-primary) !important;
+}
+
+/* 加载动画粉色主题 */
+.el-loading-spinner .el-loading-text {
+  color: var(--pink-primary) !important;
+}
+
+.el-loading-spinner .path {
+  stroke: var(--pink-primary) !important;
+}
+
+/* 通用粉色按钮样式 */
+.btn-pink {
+  background: var(--pink-gradient) !important;
+  border: none !important;
+  color: #fff !important;
+  border-radius: 25px !important;
+  padding: 12px 30px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  box-shadow: 0 4px 15px var(--shadow-pink) !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+}
+
+.btn-pink:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(255, 107, 157, 0.3) !important;
+}
+
+/* 通用粉色边框按钮 */
+.btn-pink-outline {
+  background: transparent !important;
+  border: 2px solid var(--pink-primary) !important;
+  color: var(--pink-primary) !important;
+  border-radius: 25px !important;
+  padding: 10px 28px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+}
+
+.btn-pink-outline:hover {
+  background: var(--pink-primary) !important;
+  color: #fff !important;
+  transform: translateY(-2px) !important;
+}
+
+/* 卡片样式 */
+.card-pink {
+  background: var(--bg-white) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 20px var(--shadow-soft) !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease !important;
+}
+
+.card-pink:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 8px 30px var(--shadow-pink) !important;
+}
+
+/* 标题装饰 */
+.title-pink {
+  color: var(--pink-primary) !important;
+  font-weight: 600 !important;
+  position: relative !important;
+  display: inline-block !important;
+}
+
+.title-pink::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: -8px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 60px !important;
+  height: 3px !important;
+  background: var(--pink-gradient) !important;
+  border-radius: 2px !important;
+}
+
+/* 渐变背景 */
+.bg-pink-gradient {
+  background: var(--pink-gradient) !important;
+}
+
+.bg-pink-soft {
+  background: var(--pink-gradient-soft) !important;
+}
+
+/* 文字渐变 */
+.text-gradient {
+  background: var(--pink-gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--pink-lightest) !important;
+  border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--pink-light) !important;
+  border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pink-primary) !important;
+}
